@@ -92,6 +92,8 @@ public class StepView extends View {
     private int doneTextColor;
     @ColorInt
     private int nextTextColor;
+    @ColorInt
+    private int labelNextTextColor;
     @Dimension
     private int stepPadding;
     @ColorInt
@@ -159,6 +161,7 @@ public class StepView extends View {
         doneCircleRadius = ta.getDimensionPixelSize(R.styleable.StepView_sv_doneCircleRadius, 0);
         doneTextColor = ta.getColor(R.styleable.StepView_sv_doneTextColor, 0);
         nextTextColor = ta.getColor(R.styleable.StepView_sv_nextTextColor, 0);
+        labelNextTextColor = ta.getColor(R.styleable.StepView_sv_labelNextTextColor, 0);
         stepPadding = ta.getDimensionPixelSize(R.styleable.StepView_sv_stepPadding, 0);
         nextStepLineColor = ta.getColor(R.styleable.StepView_sv_nextStepLineColor, 0);
         doneStepLineColor = ta.getColor(R.styleable.StepView_sv_doneStepLineColor, 0);
@@ -736,7 +739,7 @@ public class StepView extends View {
                 drawNumber(canvas, number, circleCenterX, paint);
 
                 textPaint.setTextSize(textSize);
-                textPaint.setColor(nextTextColor);
+                textPaint.setColor(labelNextTextColor);
                 drawText(canvas, text, textY, step);
             }
         }

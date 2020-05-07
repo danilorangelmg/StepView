@@ -11,6 +11,7 @@
         <attr name="sv_doneCircleRadius" format="dimension" />
         <attr name="sv_doneTextColor" format="color" />
         <attr name="sv_nextTextColor" format="color" />
+        <attr name="sv_labelNextTextColor" format="color" />
         <attr name="sv_nextStepLineColor" format="color" />
         <attr name="sv_doneStepLineColor" format="color" />
         <attr name="sv_stepPadding" format="dimension" />
